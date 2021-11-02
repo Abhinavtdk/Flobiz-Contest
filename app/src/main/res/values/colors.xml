@@ -7,4 +7,23 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="sunburst">#c78a44</color>
+    <color name="lt_sunburst">#fdba72</color>
+    <color name="dark_sunburst">#935d17</color>
+    <color name="sunset">#d8b26e</color>
+    <color name="lt_sunset">#ffe49d</color>
+    <color name="dark_sunset">#a58341</color>
+    <color name="cloud">#dad5d2</color>
+    <color name="lt_cloud">#ffffff</color>
+    <color name="dark_cloud">#a8a4a1</color>
+    <color name="sea">#b4c1c5</color>
+    <color name="lt_sea">#e6f4f8</color>
+    <color name="dark_sea">#849195</color>
+    <color name="deepsea">#5f7782</color>
+    <color name="lt_deepsea">#8da6b1</color>
+    <color name="dark_deepsea">#344b55</color>
+
 </resources>
