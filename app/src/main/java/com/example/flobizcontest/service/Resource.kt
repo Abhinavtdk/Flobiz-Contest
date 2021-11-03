@@ -1,4 +1,4 @@
-package com.example.flobizcontest
+package com.example.flobizcontest.service
 
 sealed class Resource<T>(
     val data: T? = null,

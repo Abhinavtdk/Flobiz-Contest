@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.flobizcontest.Resource
+import com.example.flobizcontest.service.Resource
 import com.example.flobizcontest.model.StackExchangeResponse
 import com.example.flobizcontest.repository.StackExchangeRepository
 import kotlinx.coroutines.Dispatchers
