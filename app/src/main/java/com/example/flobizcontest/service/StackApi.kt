@@ -1,6 +1,6 @@
 package com.example.flobizcontest.service
 
-import com.example.flobizcontest.Constants
+import com.example.flobizcontest.utils.Constants
 import com.example.flobizcontest.model.StackExchangeResponse
 import retrofit2.Response
 import retrofit2.http.GET

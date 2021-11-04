@@ -1,6 +1,6 @@
 package com.example.flobizcontest.service
 
-import com.example.flobizcontest.Constants
+import com.example.flobizcontest.utils.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

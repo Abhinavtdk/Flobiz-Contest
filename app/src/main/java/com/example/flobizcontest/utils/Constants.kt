@@ -1,4 +1,4 @@
-package com.example.flobizcontest
+package com.example.flobizcontest.utils
 
 class Constants {
 
