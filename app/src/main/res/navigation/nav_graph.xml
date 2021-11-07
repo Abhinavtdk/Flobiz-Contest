@@ -9,5 +9,14 @@
         android:id="@+id/questionsListFragment"
         android:name="com.example.flobizcontest.ui.QuestionsListFragment"
         android:label="fragment_questions_list"
-        tools:layout="@layout/fragment_questions_list" />
+        tools:layout="@layout/fragment_questions_list" >
+        <action
+            android:id="@+id/action_questionsListFragment_to_tagsFragment"
+            app:destination="@id/tagsFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/tagsFragment"
+        android:name="com.example.flobizcontest.ui.TagsFragment"
+        android:label="fragment_tags"
+        tools:layout="@layout/fragment_tags" />
 </navigation>

@@ -18,6 +18,7 @@ import com.example.flobizcontest.utils.openQuestion
 import com.example.flobizcontest.viewmodel.StackExchangeViewModel
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.android.synthetic.main.fragment_tags.*
 
 @AndroidEntryPoint
 class TagsFragment : BottomSheetDialogFragment() {
@@ -41,18 +42,18 @@ class TagsFragment : BottomSheetDialogFragment() {
 
         setUpRecyclerView()
 
-        binding?.apply {
-            closeTags.setOnClickListener {
+            close_tags.setOnClickListener {
                 dismiss()
+                tagsAdapter.submitList(null)
             }
 
-            useTagsButton.setOnClickListener {
-                tagsInputText.editText?.text?.toString()?.trim()?.let { tags ->
-                    tagsInputText.error = null
+            use_tags_button.setOnClickListener {
+                tags_input_text.editText?.text?.toString()?.trim()?.let { tags ->
+                    tags_input_text.error = null
                     viewModel.searchWithFilterTags(tags)
-                } ?: kotlin.run { tagsInputText.error = "Cannot be empty" }
+                } ?: kotlin.run { tags_input_text.error = "Cannot be empty" }
             }
-        }
+
 
         viewModel.taggedQuestions.observe(viewLifecycleOwner) { resource ->
             when (resource) {
@@ -85,7 +86,6 @@ class TagsFragment : BottomSheetDialogFragment() {
                     nullSearchTags.isGone = true
                     questionsAfterTagRv.isGone = true
                 }
-
             }
         }
     }

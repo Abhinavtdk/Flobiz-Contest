@@ -13,7 +13,6 @@ import com.example.flobizcontest.model.Item
 import com.example.flobizcontest.utils.getTime
 
 class QuestionsAdapter(
-//private val onClicked : ((item:Item)->Unit),
     private val clickListener: OnClickListener, private val context: Context
 ) : ListAdapter<Item, QuestionsAdapter.ItemViewHolder>(DiffUtilCallBack()) {
     inner class ItemViewHolder(private val binding: QuestionItemBinding) :
@@ -28,9 +27,9 @@ class QuestionsAdapter(
                 questionItemTagsRv.setHasFixedSize(true)
                 questionItemTagsRv.adapter = tagAdapter
                 tagAdapter.submitList(questionItem.tags)
-//                root.setOnClickListener {
-//                    onClicked(questionItem)
-//                }
+                root.setOnClickListener {
+                      clickListener.openQuestion(questionItem)
+                }
             }
         }
     }

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lt_deepsea"
-    android:padding="10dp"
+    android:paddingHorizontal="10dp"
+    android:paddingBottom="50dp"
     app:layout_behavior="@string/bottom_sheet_behavior"
     tools:context=".ui.TagsFragment">
 
@@ -70,6 +71,8 @@
             android:layout_marginTop="8dp"
             android:backgroundTint="@color/dark_deepsea"
             android:text="Use Tags"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textAllCaps="false"/>
         
         <ProgressBar

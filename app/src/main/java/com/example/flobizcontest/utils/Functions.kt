@@ -10,8 +10,8 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 fun TextView.getTime(time: Long) {
-    val date = Date(time)
-    val timeFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(date)
+    val date = Date(time*1000L)
+    val timeFormat = SimpleDateFormat("dd-MM-yyyy").format(date)
     this.text = timeFormat
 }
 

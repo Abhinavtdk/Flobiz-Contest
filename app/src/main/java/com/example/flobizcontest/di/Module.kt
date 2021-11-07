@@ -6,7 +6,6 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import retrofit2.create
 import javax.inject.Singleton
 
 @Module
@@ -21,5 +20,7 @@ object Module {
     @Singleton
     fun providesStackApi(apiClient: ApiClient): StackApi =
         apiClient.retrofit.create(StackApi::class.java)
+
+
 
 }
